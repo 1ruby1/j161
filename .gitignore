@@ -1,0 +1,12 @@
+classes/
+lib/
+model/*.png
+*.class
+*.jar
+*.swp
+*.html
+*.rar
+*.tar
+*.zip
+*.log
+
