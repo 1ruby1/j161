@@ -1,0 +1,24 @@
+abstract class Duch{
+	-filBehavior:FlyBehavior
+	-quackBehavior:QuackBehavior
+	+swim()
+	+abstract display()
+	+setFlyBehavior(fb:FlyBehavior)
+	+setQuackBehavior(qb:QuackBehavior)
+}
+Interface Quackable(){
+	+quack()
+}
+Interface Flyable(){
+	+fly()
+}
+
+Duck -right-> QuackBehavior
+Duck -left-> FlyBehavior
+FlyBehavior <|.. FlyWithWings
+QuackBehavior <|.. Quack
+
+Duck <|-- MallerDuck
+Duck <|-- RedHatDuck
+Duck <|-- RubberDuck
+Duck <|-- DecoyDuck
