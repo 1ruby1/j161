@@ -1,0 +1,7 @@
+class Turtle{
+}
+class WeightTurtle{
+	#weight:int
+	+WeightTurtle(w:int)
+	+getWeight():int
+}
